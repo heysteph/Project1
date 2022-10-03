@@ -49,8 +49,8 @@ def tracking_data(DATADIR, game_id, teamname):
     jerseys = [x for x in next(reader) if x != '']  # extract player jersey numbers from second row
     columns = next(reader)
     for i, j in enumerate(jerseys):  # create x & y position column headers for each player
-        columns[i*2+3] = "{}_{}_x".format(teamname, j)
-        columns[i*2+4] = "{}_{}_y".format(teamname, j)
+        columns[i*2+3] = "Player{}_x".format(j)
+        columns[i*2+4] = "Player{}_y".format(j)
     columns[-2] = "ball_x"  # column headers for the x & y positions of the ball
     columns[-1] = "ball_y"
     # Second: read in tracking data and place into pandas Dataframe
