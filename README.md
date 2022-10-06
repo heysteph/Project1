@@ -1,9 +1,9 @@
 # Project 1
 
 ## Files to navigate
-See project_notebook for the codes.
-See project report for the report.
-See module1 for the functions we created.
+Refer to project_notebook.ipynb for the codes and module1.py for the module.
+
+The project report is Project_1.pdf 
 
 ## Brief description of Assignment/Project
 
