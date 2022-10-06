@@ -33,6 +33,7 @@ def types(passes):
 def normal(data):
     newval=[]
     maxi = max(data)
+    mini = min(data)
     for oldval in data:
-        newval.append(oldval/maxi)
+        newval.append((oldval-mini)/(maxi-mini))
     return newval
