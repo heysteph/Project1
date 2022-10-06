@@ -29,3 +29,10 @@ def types(passes):
         else:
             classes.append(5)
     return classes
+
+def normal(data):
+    newval=[]
+    maxi = max(data)
+    for oldval in data:
+        newval.append(oldval/maxi)
+    return newval
